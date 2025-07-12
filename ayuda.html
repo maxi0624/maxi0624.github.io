@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="imagenes/sion.jpg" type="Imagen/x-icon" />
+    <title>Ayuda</title>
+    <link rel="icon" href="imagenes/sion.jpg" type="Imagen/x-icon" />
+    <style>
+      body {
+        color: #f8fafc;
+        font-family: "Segoe UI", sans-serif;
+        margin: 0;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        margin-left: -800px;
+      }
+
+      .form-container {
+        max-width: 800px;
+        width: 100%;
+        color: deepskyblue;
+      }
+
+      h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 30px;
+        color: #cbd5e1;
+      }
+
+      form {
+        display: flex;
+        flex-direction: colum;
+        gap: 15px;
+      }
+
+      .row {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      .field {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input,
+      textarea {
+        border: 1px solid #334155;
+        border-radius: 6px;
+        padding: 10px;
+        color: white;
+        font-size: 16px;
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+        color: #94a3b8;
+      }
+
+      textarea {
+        resize: vertical;
+        height: 120px;
+      }
+
+      .required {
+        color: #ffa500;
+        margin-left: 3px;
+      }
+
+      button {
+        margin-right: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Contactenos</h2>
+      <form>
+        <div class="row">
+          <div class="field">
+            <label>Nombre <span class="required">*</span></label>
+            <input type="text" placeholder="Nombre" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label>Empresa <span class="required">*</span></label>
+            <input type="text" required placeholder="Empresa" />
+          </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+          <div class="field">
+            <label>Telefono <span class="required">*</span></label>
+            <input type="text" required placeholder="Telefono" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label>Correo Electrico <span class="required">*</span></label>
+            <input type="email" required placeholder="Correo" />
+          </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+          <div class="field">
+            <label>Asunto <span class="required">*</span></label>
+            <input type="text" required placeholder="Asunto" />
+          </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+          <div class="field">
+            <label>Mensaje <span class="required">*</span></label>
+            <input type="text" required placeholder="Escribe tu solicitud" />
+          </div>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html lang="en" class="principal">
+  <head>
+    <title>Tienda Sion</title>
+    <link rel="icon" href="imagenes/sion.jpg" type="Imagen/x-icon" />
+    <style>
+      .sionimg {
+        width: 100px;
+        margin-left: 50px;
+        margin-top: -50px;
+        position: relative;
+        top: 40px;
+        margin-left: 200px;
+        width: 250px;
+      }
+
+      body {
+        background-color: deepskyblue;
+        background-attachment: fixed;
+        overflow-x: hidden;
+      }
+
+      .linea {
+        height: 5px;
+        background-color: black;
+        border: none;
+        width: 100%;
+      }
+      .form {
+        margin-left: 577px;
+        position: relative;
+        top: 108px;
+        width: 85%;
+      }
+
+      form input,
+      form select,
+      form textarea {
+        width: 10%;
+        font-size: 16px;
+        padding: 10px;
+      }
+
+      .telefono {
+        width: 70px;
+        margin-left: -200px;
+      }
+
+      .registrar {
+        width: 70px;
+        margin-left: 2000px;
+        margin-top: 10px;
+      }
+
+      .ayuda {
+        width: 45px;
+      }
+
+      .menu-container {
+        position: relative;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        margin-left: 15px;
+      }
+
+      .menu-icon {
+        cursor: pointer;
+      }
+
+      .menu-icon img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .menu-options {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .menu-options li {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        color: black;
+      }
+
+      #menu-toggle:checked + .menu-icon + .menu-options {
+        display: block;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      .container {
+        background-color: hsla(0, 0%, 57%, 0.418);
+        margin-left: 0;
+      }
+
+      .container nav {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px;
+        background-color: deepskyblue;
+        margin-bottom: 50px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 5rem;
+        color: #222;
+        display: block;
+      }
+
+      .grid {
+        display: grid;
+        max-width: 1100px;
+        justify-content: center;
+        margin: auto;
+        gap: 20px;
+        grid-template-columns: repeat(3, 280px);
+      }
+
+      .items {
+        background-color: #fff;
+        border: solid thin #e1e1e1;
+      }
+      .items img {
+        width: 180px;
+        height: 170px;
+      }
+
+      .info {
+        padding: 15px;
+      }
+
+      .info h3 {
+        font-size: 1.8rem;
+      }
+
+      .info p {
+        font-size: 2rem;
+      }
+
+      .precio p {
+        font-size: 2rem;
+      }
+
+      .precio {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bolder;
+      }
+
+      .precio p {
+        font-size: 1.8rem;
+      }
+
+      .info h3,
+      .info p {
+        color: #222;
+        margin-bottom: 15px;
+      }
+
+      .precio p:first-child {
+        text-decoration: line through;
+      }
+
+      .info buttom {
+        padding: 1rem;
+        width: 10;
+      }
+
+      .viejo {
+        text-decoration: line-through;
+      }
+
+      .area1 {
+        background-color: #dd5719;
+        width: 100%;
+      }
+
+      .clases {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+        width: 3000px;
+        height: 120px;
+        padding: 100px 0;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .clases a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -37px;
+        left: 10px;
+      }
+
+      .button-container {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="area1">
+      <form class="form" id="search-form">
+        <input type="text" id="search-input" placeholder="Busca" />
+      </form>
+
+      <div class="button-container" style="text-align: center">
+        <a href="registrate.html">
+          <img class="registrar" src="imagenes/ingresar.png" alt="" />
+        </a>
+
+        <a href="hablar.html">
+          <img class="telefono" src="imagenes/telefono.png" alt="" />
+        </a>
+      </div>
+
+      <img
+        class="sionimg"
+        src="imagenes/sion.jpg"
+        alt="Imagen Logo Sion Suministros."
+      />
+
+      <div class="clases">
+        <a href="enlace.html"> Camisas</a>
+        <a href="enlace.html"> Maquinas</a>
+        <a href="enlace.html"> Estampados</a>
+        <a href="enlace.html"> Papeles</a>
+        <a href="enlace.html"> Super ofertas</a>
+      </div>
+    </div>
+
+    <hr class="linea" />
+
+    <div class="container">
+      <nav>
+        <h1>Productos</h1>
+        <div class="grid">
+          <div class="items">
+            <img src="imagenes/bombillo.jpg" />
+            <div class="info">
+              <h3>Bombillo led de 3W</h3>
+              <div class="precio">
+                <p class="viejo">$5000</p>
+                <p>$3500</p>
+              </div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="items">
+            <img src="imagenes/martillo.jpg" />
+            <div class="info">
+              <h3>Martillo</h3>
+              <div class="precio">
+                <p class="viejo">$18000</p>
+                <p>$15000</p>
+              </div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="items">
+            <img src="imagenes/panel led.png" />
+            <div class="info">
+              <h3>Panel led 9w</h3>
+              <div class="precio">
+                <p class="viejo">$15000</p>
+                <p>$10000</p>
+              </div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="items">
+            <img src="imagenes/taladro.jpg" />
+            <div class="info">
+              <h3>Taladro alambrico</h3>
+              <div class="precio">
+                <p class="viejo">$60000</p>
+                <p>$55000</p>
+              </div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="items">
+            <img src="imagenes/tornillo.jpg" />
+            <div class="info">
+              <h3>Tornillo de 1 pulgada autoperforante</h3>
+              <div class="precio">
+                <p class="viejo">$200</p>
+                <p>$100</p>
+              </div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="items">
+            <img src="imagenes/vampiroelectrico.jpg" />
+            <div class="info">
+              <h3>Vampiro electrico</h3>
+              <div class="precio">
+                <p class="viejo">$5000</p>
+                <p>$3500</p>
+              </div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>

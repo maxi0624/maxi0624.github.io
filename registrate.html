@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en" registrate>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrate</title>
+    <link rel="icon" href="imagenes/sion.jpg" type="Imagen/x-icon" />
+    <style>
+
+      .fieldset {
+        background-color:deepskyblue;
+        border-radius: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .field {
+        border-radius: 1%;
+      }
+
+      .h1 {
+        font-family: sans-serif;
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold
+      }
+
+      .p {
+        font-family: sans-serif;
+        font-size: 19px;
+      }
+
+      form {
+        padding: 10px;
+        margin: 0 auto;
+        width: 300px;
+      }
+
+      input, textarea{
+        border: 0;
+        outline: none;
+      }
+
+      .volver {
+        font-size: 20px;
+        font-family: sans-serif;
+        font-weight: bold;
+        padding: 10px 20px;
+      }
+
+      form input,
+      form select,
+      form textarea {
+        width: 60%;
+        font-size: 16px;
+        padding: 10px;
+      }
+
+      .buttom {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: orange;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+
+      .p {
+        font-size: 25px;
+        font-family: sans-serif;
+      }
+
+      .boton {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: orange;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="volver">
+      <a href="index.html" class="boton">Volver</a>
+    </div>
+
+    <legend class="h1">Registrarse</legend>
+
+    <fieldset class="fieldset">
+
+    <form class="form">
+      <p class="p">Nombre*</p>
+      <input type="text" class="field" placeholder="Nombre"> <br/>
+
+      <p class="p">Apellido*</p>
+      <input type="text"  class="field" required placeholder="Apellido"> <br/>
+
+      <p class="p">Correo electronico*</p>
+      <input type="email"  class="field" required placeholder="Correo"> <br/>
+
+      <p class="p">Contraseña*</p>
+      <input type="password"  class="field" required placeholder="Contraseña"> <br/>
+
+      <p class="p">Fecha de nacimiento*</p>
+      <input type="date" class="field"> <br/>
+
+      <br>
+
+      <button class="buttom">Enviar datos</button>
+
+      </fieldset>
+    </form>
+  </body>
+</html>
